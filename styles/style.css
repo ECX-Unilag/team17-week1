@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.vertical_nav{
+    width: 90px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 65px 3px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+
+}
+.icons div{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.icons img{
+    width: 30px;
+}
+.moon{
+    margin-top: 70px;
+}
+.message{
+    margin-top: 20px;
+}
+.horizontal_nav{
+    width: 94%;
+    display: flex;
+    height: 100px;
+
+}
+.input_cont{
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #F5F5F5;
+
+    box-shadow: 0px 4px 65px 3px rgba(0, 0, 0, 0.1);
+
+}
+.input_cont input{
+    color: #B5D9B5;
+    border: 1px solid #B5D9B5;
+    
+    border-radius: 50px;
+    padding: 15px 100px 15px 22px;
+    transform: translateX(15px);
+}
+.input_cont input:focus{
+    outline: none;
+}
+.user{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #6BB36B;
+    width: 20%;
+
+}
+.user p{
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+   
+    margin: auto;
+}
+.user img{
+    width: 60px;
+    transform: translateX(-25px);
+}
+.user p span{
+    font-weight: normal;
+font-size: 12px;
+}
+
+@media(max-width:500px){
+    .vertical_nav{
+        width: 40px;
+    }
+    .icons img{
+        width: 15px;
+    }
+}
+
+@media(max-width:800px){
+    .input_cont{
+        width: 70%;
+    }
+    .user{
+        width: 30%;
+    }
+}
+@media(max-width:580px){
+    .input_cont{
+        width: 60%;
+    }
+    .user{
+        width: 40%;
+    }
+    .input_cont input{
+        color: #B5D9B5;
+        border: 1px solid #B5D9B5;
+        
+        border-radius: 50px;
+        padding: 15px 5px 15px 22px;
+        transform: translateX(15px);
+    }
+}
+@media(max-width:440px){
+        .horizontal_nav{
+            flex-direction: column;
+        }
+        .input_cont{
+            width: 100%;
+        }
+        .user{
+            width: 100%;
+        }
+        .input_cont input{
+            
+            width: 60%;
+        }
+        .user img{
+            width: 60px;
+            transform: translateX(85px);
+        }
+}
+
+@media(max-width:352px){
+    .user img{
+        transform: translateX(75px);
+    }
+}
+@media(max-width:340px){
+    .user img{
+        transform: translateX(65px);
+    }
+}
